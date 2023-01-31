@@ -1,0 +1,136 @@
+/*Globales*/
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    color: white;
+}
+
+body {
+    background: linear-gradient(rgb(0, 0, 0), rgb(18, 154, 192));
+}
+
+:root {
+    --color_principal: rgb(20, 150, 237);/*Variables en css -- */
+    --letra_size: 40px;
+}
+
+/*Header*/
+
+header { 
+    text-align: center;
+}
+
+.titulo { /* . es para seleccion de una clase  poner todo el elemento*/
+    text-decoration: none;
+    font-size: 80px;
+}
+
+.titulo:hover { /* selectores de selecion para que cuando se pase el raton se haga algo sobre el elemnto*/
+    color: var(--color_principal);
+    transition: all .5s;
+}
+
+.activo {
+    background-color:  gold;
+    color: black;
+    border-radius: 10px;
+}
+
+/*Nav*/
+
+nav {
+    background-color: var(--color_principal);
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 39px;
+}
+
+nav :hover {
+    transition: all .5;
+    background-color:  gold;
+    color: black;
+    border-radius: 10px;
+}
+
+.navegacion__boton1 {
+    margin-right: 306px;
+}
+
+/*informacion*/
+
+
+.informacion {
+    font-size: var(--letra_size);
+    text-align: center;
+    margin: 10% 30%;
+}
+
+.informacion__titulo {
+    margin-bottom: 66px;
+    text-align: center;
+    margin: 10% 30%;
+}
+
+/*Menu lateral*/
+
+.menu {
+    float: left;
+    font-size: var(--letra_size);
+    border: solid 3px var(--color_principal);
+    height: 950px;
+    width: 500px;
+    padding-top: 1px;
+    margin-left: 60px;
+    margin-top: 60px;
+    border-radius: 3px;
+    display: inline;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    padding-bottom: 40px;
+}
+
+
+.menu li:hover {
+    background-color: var(--color_principal);
+    transition: all .5s;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu__seleccionado {
+    color: black;
+    background-color: var(--color_principal);
+}
+
+/*Contenerdor*/
+
+.contenedor {
+    float: right;
+    font-size: var(--letra_size);
+    border: solid 3px var(--color_principal);
+    height: 950px;
+    width: 1086px;
+    padding-top: 1px;
+    margin-top: 60px;
+    margin-right: 410px;
+    border-radius: 3px;
+    display: inline;
+}
+
+.contenedor__titulo {
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
